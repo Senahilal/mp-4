@@ -8,7 +8,7 @@ const WeatherCardWrapper = styled.div`
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
 `;
 

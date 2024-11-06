@@ -9,17 +9,24 @@ import WeatherCard from "@/components/weatherCard";
 const WeatherContentWrapper = styled.main`
     width: 80vw;
     margin: auto;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    background-color: #f8f0df;
+    padding: 2rem;
 `;
 
 const CityName = styled.h1`
-    color: blueviolet;
+    
 `;
 
 const WeatherCardsContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
-    border: gold 5px solid;
+
+    
 `;
 
 export default function CityPage() {
