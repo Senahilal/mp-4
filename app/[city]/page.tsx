@@ -19,14 +19,17 @@ const WeatherContentWrapper = styled.main`
 `;
 
 const CityName = styled.h1`
-    
+    font-size: 2.5rem;
+    text-transform: capitalize; /* Capitalizes city name */
+    margin-bottom: 1rem;
+    color: #333;
 `;
 
 const WeatherCardsContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
-
-    
+    color: #333;
+    justify-content: center; /* Center vertically */
 `;
 
 export default function CityPage() {
