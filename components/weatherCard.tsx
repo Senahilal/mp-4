@@ -10,7 +10,7 @@ const WeatherCardWrapper = styled.div`
     margin: 10px;
     width: 250px;
     border-radius: 10px;
-    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 
     h2{
@@ -18,7 +18,6 @@ const WeatherCardWrapper = styled.div`
         font-weight: bold;
         color: #333;
         margin-bottom: 0.5rem;
-        absolute: right;
     }
     
     #conditions {
@@ -38,6 +37,7 @@ const WeatherCardWrapper = styled.div`
         font-size: 1rem;
         color: #333;
         margin: 0;
+        color: #84c7e4;
     }
 
     small {
@@ -50,7 +50,7 @@ export default function WeatherCard(props: Weather) {
     return (
         <WeatherCardWrapper className="weather-card">
             <h2>{props.datetime}</h2>
-            <p id="conditions">{props.conditions}</p>
+            <p id="conditions"> {props.conditions}</p>
             <p id="description">{props.description}</p>
             <p>{props.tempmin}°/{props.tempmax}° <small>min/max</small></p>
         </WeatherCardWrapper>
